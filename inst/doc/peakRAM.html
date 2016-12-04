@@ -12,7 +12,7 @@
 
 <meta name="author" content="Thomas Quinn" />
 
-<meta name="date" content="2016-07-29" />
+<meta name="date" content="2016-12-04" />
 
 <title>Tracking Peak RAM Use and Minimizing Overhead</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Tracking Peak RAM Use and Minimizing Overhead</h1>
 <h4 class="author"><em>Thomas Quinn</em></h4>
-<h4 class="date"><em>2016-07-29</em></h4>
+<h4 class="date"><em>2016-12-04</em></h4>
 
 
 
@@ -87,10 +87,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         <span class="dv">1</span>:<span class="fl">1e7</span> +<span class="st"> </span><span class="dv">1</span>:<span class="fl">1e7</span>,
         <span class="dv">1</span>:<span class="fl">1e7</span> *<span class="st"> </span><span class="dv">2</span>)</code></pre></div>
 <pre><code>##        Function_Call Elapsed_Time_sec Total_RAM_Used_MiB Peak_RAM_Used_MiB
-## 1 function() 1:1e+07            0.082               38.2              38.2
-## 2            1:1e+07            0.080               38.2              38.2
-## 3  1:1e+07 + 1:1e+07            0.201               38.2              76.3
-## 4        1:1e+07 * 2            0.134               76.3             114.5</code></pre>
+## 1 function() 1:1e+07            0.034               38.1              38.1
+## 2            1:1e+07            0.032               38.1              38.1
+## 3  1:1e+07 + 1:1e+07            0.089               38.1              76.3
+## 4        1:1e+07 * 2            0.073               76.3             114.4</code></pre>
 </div>
 <div id="discussion" class="section level3">
 <h3>Discussion</h3>
@@ -99,7 +99,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Alas, <em>R</em> is a most precarious lover. To conserve the maximum amount of RAM, we need an approach that makes no needless copies. In this case, we just need to force <code>2</code> to exist as an integer.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">peakRAM</span>(<span class="dv">1</span>:<span class="fl">1e7</span> *<span class="st"> </span><span class="dv">2</span>:<span class="dv">2</span>)</code></pre></div>
 <pre><code>##   Function_Call Elapsed_Time_sec Total_RAM_Used_MiB Peak_RAM_Used_MiB
-## 1 1:1e+07 * 2:2            0.097               38.1              38.1</code></pre>
+## 1 1:1e+07 * 2:2            0.042               38.2              38.2</code></pre>
 <p>Now, we have a solution that we can scale confidently, knowing for sure that we will not unwittingly exceed memory capacity through superfluous RAM overhead.</p>
 </div>
 </div>

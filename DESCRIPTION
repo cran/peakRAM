@@ -1,6 +1,6 @@
 Package: peakRAM
 Title: Monitor the Total and Peak RAM Used by an Expression or Function
-Version: 1.0.0
+Version: 1.0.1
 URL: http://github.com/tpq/peakRAM
 BugReports: http://github.com/tpq/peakRAM/issues
 Authors@R: c(
@@ -23,8 +23,8 @@ RoxygenNote: 5.0.1
 Depends: R (>= 3.2.2)
 Suggests: knitr, rmarkdown
 NeedsCompilation: no
-Packaged: 2016-07-29 05:04:32 UTC; thom
+Packaged: 2016-12-04 10:02:30 UTC; thom
 Author: Thomas Quinn [aut, cre]
 Maintainer: Thomas Quinn <contacttomquinn@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-07-29 07:38:22
+Date/Publication: 2016-12-04 14:52:39

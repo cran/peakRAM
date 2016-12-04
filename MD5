@@ -1,11 +1,11 @@
-66d96551af341e7c2efc5a9090d29814 *DESCRIPTION
+d5020d64b2c6583c128a86818d2f0967 *DESCRIPTION
 243fb936c2e7ce97eb49a41c846b622e *NAMESPACE
-e222dc2876eea010ffbb5fa3d8f60d4f *NEWS.md
-bad57a38a860e6c6023b5836f158a735 *R/peakRAM.R
+bf1c2baa83a5c6a253e4bcee8f2345d4 *NEWS.md
+5fed90abb32e8bb0809c57957ef9ea27 *R/peakRAM.R
 456ddf1b8877cd929a44615d2aceeebf *README.md
-fb3b8af6128fbb560aa3c1d54454457c *build/vignette.rds
+49a9888459f0971170234e723ee23f39 *build/vignette.rds
 5335a6b67c5706edab64fb3bb3b64022 *inst/doc/peakRAM.R
 e9fd540ea3a8ddda70e78e1f99ebaf29 *inst/doc/peakRAM.Rmd
-2b51da6d71f724076dfc195f75fafabe *inst/doc/peakRAM.html
+133efeed203f5a2853f68bab74502210 *inst/doc/peakRAM.html
 2ee951f5a7238d6691090775a5fe248a *man/peakRAM.Rd
 e9fd540ea3a8ddda70e78e1f99ebaf29 *vignettes/peakRAM.Rmd
